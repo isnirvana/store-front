@@ -1,0 +1,247 @@
+{
+    "statusCode": 200,
+    "status": true,
+    "message": "Product fetched successfully",
+    "payload": [
+        {
+            "id": "ca14cd7a-aac4-4599-84e4-b50fb8ade9c2",
+            "updatedAt": "2026-01-01T17:00:39.000Z",
+            "createdAt": "2025-11-09T15:41:05.137Z",
+            "price": 500,
+            "package": {
+                "id": "d1dc783b-6693-4ee5-9fb5-1a5ca3630759",
+                "updatedAt": "2026-01-02T11:21:34.000Z",
+                "createdAt": "2025-10-20T10:57:38.704Z",
+                "price": 420,
+                "size": 1,
+                "network": "MTN",
+                "available": true
+            },
+            "available": true
+        },
+        {
+            "id": "66cfd1de-aae3-49e7-b04f-dc48ad1cad59",
+            "updatedAt": "2026-01-01T17:00:49.000Z",
+            "createdAt": "2025-11-09T15:41:52.319Z",
+            "price": 1000,
+            "package": {
+                "id": "04299327-b630-4ecd-a2c3-4d121d0f0937",
+                "updatedAt": "2026-01-02T11:23:21.000Z",
+                "createdAt": "2025-10-13T13:38:55.921Z",
+                "price": 840,
+                "size": 2,
+                "network": "MTN",
+                "available": true
+            },
+            "available": true
+        },
+        {
+            "id": "85e43d40-d2b9-459f-b1d5-dbaa28284bc9",
+            "updatedAt": "2026-01-01T17:00:59.000Z",
+            "createdAt": "2025-11-09T15:52:43.519Z",
+            "price": 1500,
+            "package": {
+                "id": "c956c8e5-9729-47c3-ae2b-17f7fffcd9a7",
+                "updatedAt": "2026-01-02T11:23:28.000Z",
+                "createdAt": "2025-10-13T13:38:48.364Z",
+                "price": 1260,
+                "size": 3,
+                "network": "MTN",
+                "available": true
+            },
+            "available": true
+        },
+        {
+            "id": "61b396cc-81dc-4792-8d9a-04272f3f0994",
+            "updatedAt": "2026-01-01T17:01:10.000Z",
+            "createdAt": "2025-11-09T15:53:56.191Z",
+            "price": 2000,
+            "package": {
+                "id": "a83523ce-31f0-45de-b07f-056192ad69a4",
+                "updatedAt": "2026-01-02T11:24:10.000Z",
+                "createdAt": "2025-10-20T10:59:15.059Z",
+                "price": 1680,
+                "size": 4,
+                "network": "MTN",
+                "available": true
+            },
+            "available": true
+        },
+        {
+            "id": "406ec0be-c21d-40f4-8c78-0b5bf82a2021",
+            "updatedAt": "2026-01-01T17:01:19.000Z",
+            "createdAt": "2025-11-09T15:56:16.329Z",
+            "price": 2500,
+            "package": {
+                "id": "dd6af2ec-a460-492e-8cd7-46849937f90b",
+                "updatedAt": "2026-01-02T11:24:19.000Z",
+                "createdAt": "2025-10-20T11:00:26.482Z",
+                "price": 2050,
+                "size": 5,
+                "network": "MTN",
+                "available": true
+            },
+            "available": true
+        },
+        {
+            "id": "be75c0b6-7aed-4264-b222-f7dceb028e61",
+            "updatedAt": "2026-01-01T17:01:33.000Z",
+            "createdAt": "2025-11-09T15:57:19.293Z",
+            "price": 3000,
+            "package": {
+                "id": "284f41da-b227-4c40-9bd3-e920ef6db30b",
+                "updatedAt": "2026-01-02T11:24:46.000Z",
+                "createdAt": "2025-10-20T11:02:08.446Z",
+                "price": 2600,
+                "size": 6,
+                "network": "MTN",
+                "available": true
+            },
+            "available": true
+        },
+        {
+            "id": "b9fda731-debb-4700-a5a3-4bf57c966422",
+            "updatedAt": "2025-11-09T15:59:38.753Z",
+            "createdAt": "2025-11-09T15:59:38.753Z",
+            "price": 3500,
+            "package": {
+                "id": "1fb41733-2026-4f6b-87c9-50a73e38ed12",
+                "updatedAt": "2026-01-02T11:25:02.000Z",
+                "createdAt": "2025-10-20T11:02:28.868Z",
+                "price": 2900,
+                "size": 7,
+                "network": "MTN",
+                "available": true
+            },
+            "available": true
+        },
+        {
+            "id": "a985f931-4f98-428e-a4eb-3e3f79c0aa32",
+            "updatedAt": "2025-11-09T16:00:16.304Z",
+            "createdAt": "2025-11-09T16:00:16.304Z",
+            "price": 4000,
+            "package": {
+                "id": "b03af004-a6b9-4120-a624-cbe220d279dc",
+                "updatedAt": "2026-01-02T11:31:09.000Z",
+                "createdAt": "2025-10-20T11:02:49.371Z",
+                "price": 3300,
+                "size": 8,
+                "network": "MTN",
+                "available": true
+            },
+            "available": true
+        },
+        {
+            "id": "cc643e79-dc85-4546-8109-5ceffde48abc",
+            "updatedAt": "2026-01-01T17:01:54.000Z",
+            "createdAt": "2025-11-09T16:00:43.121Z",
+            "price": 4500,
+            "package": {
+                "id": "246f58f8-6d2f-4166-8ac7-20d4f4dbb5f7",
+                "updatedAt": "2026-01-02T11:31:19.000Z",
+                "createdAt": "2025-10-20T11:03:23.579Z",
+                "price": 3990,
+                "size": 10,
+                "network": "MTN",
+                "available": true
+            },
+            "available": true
+        },
+        {
+            "id": "d287051e-646f-4676-8d2b-0f35e673dc2c",
+            "updatedAt": "2025-11-09T16:01:34.617Z",
+            "createdAt": "2025-11-09T16:01:34.617Z",
+            "price": 6500,
+            "package": {
+                "id": "ebb9f330-037d-481f-b102-0309a2911efa",
+                "updatedAt": "2026-01-02T11:31:35.000Z",
+                "createdAt": "2025-10-20T11:05:34.608Z",
+                "price": 5800,
+                "size": 15,
+                "network": "MTN",
+                "available": true
+            },
+            "available": true
+        },
+        {
+            "id": "d06986e4-d522-4fb3-b4cb-67b34fbcce8a",
+            "updatedAt": "2025-11-09T16:02:14.981Z",
+            "createdAt": "2025-11-09T16:02:14.981Z",
+            "price": 8400,
+            "package": {
+                "id": "ea28273a-4384-4277-934d-5d9252a19b6a",
+                "updatedAt": "2026-01-02T11:31:46.000Z",
+                "createdAt": "2025-10-20T11:05:49.757Z",
+                "price": 7800,
+                "size": 20,
+                "network": "MTN",
+                "available": true
+            },
+            "available": true
+        },
+        {
+            "id": "2b9ce120-3662-4cc8-9cfc-06750d41e6f6",
+            "updatedAt": "2025-11-09T16:07:36.822Z",
+            "createdAt": "2025-11-09T16:07:36.822Z",
+            "price": 10600,
+            "package": {
+                "id": "257facec-c61f-4f43-a096-2a76a9b4e070",
+                "updatedAt": "2026-01-02T11:31:54.000Z",
+                "createdAt": "2025-10-20T11:06:11.073Z",
+                "price": 9800,
+                "size": 25,
+                "network": "MTN",
+                "available": true
+            },
+            "available": true
+        },
+        {
+            "id": "fa764c14-a242-4b8d-ac90-e79e9236c057",
+            "updatedAt": "2025-11-09T16:08:03.543Z",
+            "createdAt": "2025-11-09T16:08:03.543Z",
+            "price": 12500,
+            "package": {
+                "id": "ff7dbacb-f293-4899-8cee-9743a9bfd952",
+                "updatedAt": "2026-01-02T11:32:01.000Z",
+                "createdAt": "2025-10-20T11:07:27.393Z",
+                "price": 11600,
+                "size": 30,
+                "network": "MTN",
+                "available": true
+            },
+            "available": true
+        },
+        {
+            "id": "257dc657-9eeb-47ca-8f4d-bdadc11f6b65",
+            "updatedAt": "2025-11-09T16:08:24.686Z",
+            "createdAt": "2025-11-09T16:08:24.686Z",
+            "price": 16400,
+            "package": {
+                "id": "faceb88f-cb67-4aa0-9b4b-87ebd1316aa9",
+                "updatedAt": "2026-01-02T11:32:09.000Z",
+                "createdAt": "2025-10-20T11:09:14.594Z",
+                "price": 15400,
+                "size": 40,
+                "network": "MTN",
+                "available": true
+            },
+            "available": true
+        },
+        {
+            "id": "ea35b22a-e730-4e97-b139-f2d47f2d81b1",
+            "updatedAt": "2025-11-09T16:08:52.056Z",
+            "createdAt": "2025-11-09T16:08:52.056Z",
+            "price": 20100,
+            "package": {
+                "id": "6ee8e5f9-b56f-45d3-9010-0542e62d6a62",
+                "updatedAt": "2026-01-02T11:32:23.000Z",
+                "createdAt": "2025-10-20T11:09:56.778Z",
+                "price": 19300,
+                "size": 50,
+                "network": "MTN",
+                "available": true
+            },
+            "available": true
+        }
+    ]
+}

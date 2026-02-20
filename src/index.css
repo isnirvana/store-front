@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark&));
+
+:root {
+  color-scheme: light;
+}
+
+.dark {
+  color-scheme: dark;
+}
+/* 
+@theme {
+  --color-primary: #135bec;
+  --color-background-light: #f6f6f8;
+  --color-background-dark: #101622;
+} */
+
+@theme {
+  --color-primary: #4b57db;
+  /* --color-primary: #80cfff; */
+  /* --color-primary: #135bec; */
+  /* --color-primary: #d64b3b; */
+  --color-background-light: #f6f6f8;
+  --color-background-dark: #101622;
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 1.5s infinite;
+}
+
+/* .dark {
+  background-color: #b41b1b;
+  background-color: #f6f6f8;
+  background-color: #101622;
+} */

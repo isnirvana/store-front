@@ -1,0 +1,183 @@
+{
+    "statusCode": 200,
+    "status": true,
+    "message": "Product fetched successfully",
+    "payload": [
+        {
+            "id": "353c6236-b6c4-44fe-8be0-b99ee47e664f",
+            "updatedAt": "2025-11-09T16:09:23.176Z",
+            "createdAt": "2025-11-09T16:09:23.176Z",
+            "price": 2400,
+            "package": {
+                "id": "909fa5c1-fe10-447d-aa27-18117da542d6",
+                "updatedAt": "2025-11-04T07:14:36.434Z",
+                "createdAt": "2025-10-20T15:50:46.964Z",
+                "price": 2050,
+                "size": 5,
+                "network": "TELECEL",
+                "available": true
+            },
+            "available": true
+        },
+        {
+            "id": "fb63014c-fc24-46d1-91b3-bae6ac92d6d8",
+            "updatedAt": "2025-11-09T16:09:33.632Z",
+            "createdAt": "2025-11-09T16:09:33.632Z",
+            "price": 4500,
+            "package": {
+                "id": "a8e828bf-2e8b-462c-9a7b-ba58070c6043",
+                "updatedAt": "2025-11-04T07:14:36.434Z",
+                "createdAt": "2025-10-20T15:50:59.701Z",
+                "price": 4000,
+                "size": 10,
+                "network": "TELECEL",
+                "available": true
+            },
+            "available": true
+        },
+        {
+            "id": "fe99c4ee-4c30-44c4-bc01-5196e8e1ef52",
+            "updatedAt": "2025-11-09T16:09:52.390Z",
+            "createdAt": "2025-11-09T16:09:52.390Z",
+            "price": 6400,
+            "package": {
+                "id": "a3fa6e04-2f81-4433-8507-2f92a6b0037d",
+                "updatedAt": "2025-11-04T07:14:36.434Z",
+                "createdAt": "2025-10-20T15:51:12.996Z",
+                "price": 5800,
+                "size": 15,
+                "network": "TELECEL",
+                "available": true
+            },
+            "available": true
+        },
+        {
+            "id": "c5f1363e-a579-4c2f-bbd5-5a47c4ae572f",
+            "updatedAt": "2025-11-09T16:10:11.816Z",
+            "createdAt": "2025-11-09T16:10:11.816Z",
+            "price": 8300,
+            "package": {
+                "id": "a20a4166-b04b-4d04-a4d0-731ea54ccd86",
+                "updatedAt": "2025-11-04T07:14:36.434Z",
+                "createdAt": "2025-10-20T15:51:25.331Z",
+                "price": 7700,
+                "size": 20,
+                "network": "TELECEL",
+                "available": true
+            },
+            "available": true
+        },
+        {
+            "id": "83868efb-f659-4882-999f-8257a31d03b0",
+            "updatedAt": "2025-11-09T16:11:37.457Z",
+            "createdAt": "2025-11-09T16:11:37.457Z",
+            "price": 10300,
+            "package": {
+                "id": "0696496a-d444-4f22-beb1-5c72ee5bc7d8",
+                "updatedAt": "2025-11-04T07:14:36.434Z",
+                "createdAt": "2025-10-20T15:51:36.995Z",
+                "price": 9600,
+                "size": 25,
+                "network": "TELECEL",
+                "available": true
+            },
+            "available": true
+        },
+        {
+            "id": "6e46a731-c927-4942-b3bd-4ac5ff389036",
+            "updatedAt": "2025-11-09T16:12:05.320Z",
+            "createdAt": "2025-11-09T16:12:05.320Z",
+            "price": 11700,
+            "package": {
+                "id": "20c0497d-46e9-46dd-a132-59a98a65f22a",
+                "updatedAt": "2025-11-04T07:14:36.434Z",
+                "createdAt": "2025-10-20T15:51:58.629Z",
+                "price": 11000,
+                "size": 30,
+                "network": "TELECEL",
+                "available": true
+            },
+            "available": true
+        },
+        {
+            "id": "2f207489-df49-45be-9a31-e07e45540cab",
+            "updatedAt": "2025-11-09T16:12:34.912Z",
+            "createdAt": "2025-11-09T16:12:34.912Z",
+            "price": 14000,
+            "package": {
+                "id": "430d81a3-869f-456f-8c43-a3bbaed468ce",
+                "updatedAt": "2025-11-04T07:14:36.434Z",
+                "createdAt": "2025-10-20T15:53:37.401Z",
+                "price": 13300,
+                "size": 35,
+                "network": "TELECEL",
+                "available": true
+            },
+            "available": true
+        },
+        {
+            "id": "37040400-ab90-4b69-a8d3-ef18d2a247cd",
+            "updatedAt": "2025-11-09T16:12:55.032Z",
+            "createdAt": "2025-11-09T16:12:55.032Z",
+            "price": 15100,
+            "package": {
+                "id": "9926e12c-516a-4b11-be91-2615247f880a",
+                "updatedAt": "2025-11-04T07:14:36.434Z",
+                "createdAt": "2025-10-20T15:52:19.612Z",
+                "price": 14500,
+                "size": 40,
+                "network": "TELECEL",
+                "available": true
+            },
+            "available": true
+        },
+        {
+            "id": "a8732343-f7fe-4216-842e-f230d20dfc84",
+            "updatedAt": "2025-11-09T16:13:14.289Z",
+            "createdAt": "2025-11-09T16:13:14.289Z",
+            "price": 17700,
+            "package": {
+                "id": "f56cdafd-5bcb-4c0c-a59e-79a520904e31",
+                "updatedAt": "2025-11-04T07:14:36.434Z",
+                "createdAt": "2025-10-20T15:53:50.632Z",
+                "price": 17000,
+                "size": 45,
+                "network": "TELECEL",
+                "available": true
+            },
+            "available": true
+        },
+        {
+            "id": "c63f36af-800f-4cca-9a0a-be4b21a4b14e",
+            "updatedAt": "2025-11-09T16:13:36.391Z",
+            "createdAt": "2025-11-09T16:13:36.391Z",
+            "price": 18700,
+            "package": {
+                "id": "99cbcca0-c449-4078-8ce0-a2eccb604108",
+                "updatedAt": "2025-11-04T07:14:36.434Z",
+                "createdAt": "2025-10-20T15:52:32.019Z",
+                "price": 18000,
+                "size": 50,
+                "network": "TELECEL",
+                "available": true
+            },
+            "available": true
+        },
+        {
+            "id": "461f61b5-b3ad-4902-96f0-c6151ad60443",
+            "updatedAt": "2025-11-09T16:13:58.152Z",
+            "createdAt": "2025-11-09T16:13:58.152Z",
+            "price": 36900,
+            "package": {
+                "id": "50e37159-da10-4915-a928-57e26e85c5d4",
+                "updatedAt": "2026-01-21T13:14:23.000Z",
+                "createdAt": "2025-10-20T15:52:45.698Z",
+                "price": 35900,
+                "size": 100,
+                "network": "TELECEL",
+                "available": true
+            },
+            "available": true
+        }
+    ]
+}
