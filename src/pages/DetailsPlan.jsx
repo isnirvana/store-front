@@ -9,20 +9,61 @@ function DetailsPlan() {
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
   const [orderDetails, setOrderDetails] = useState({});
+  const [redirecting, setRedirecting] = useState(false);
+  const [paymentUrl, setPaymentUrl] = useState("");
+  const [paymentStatus, setPaymentStatus] = useState(null);
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setRedirecting(true);
     setOrderDetails({
       order,
       phone,
       email,
-      id: crypto.randomUUID(),
+      // id: crypto.randomUUID(),
     });
   };
 
   useEffect(() => {
     console.log(orderDetails);
+    async function makePayment() {
+      try {
+        const response = await fetch(
+          "https://nonuniform-salley-postosseous.ngrok-free.dev/api/payment/initialize",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(orderDetails),
+          },
+        );
+
+        if (!response.ok) {
+          console.error("Payment failed");
+          return;
+        }
+
+        const result = await response.json();
+        setPaymentStatus(result.status);
+        setPaymentUrl(result.data.authorization_url);
+        console.log("Payment successful:", result);
+      } catch (error) {
+        setRedirecting(false);
+        console.error("Error with post request: ", error);
+      }
+    }
+
+    if (redirecting) {
+      makePayment();
+    }
   }, [orderDetails]);
+
+  useEffect(() => {
+    if (paymentStatus && paymentUrl) {
+      window.location.href = paymentUrl;
+    }
+  }, [paymentStatus, paymentUrl]);
 
   if (!order?.price) {
     return <Navigate to="/" replace />;
@@ -133,7 +174,9 @@ function DetailsPlan() {
                 type="submit"
                 className="w-full bg-primary text-white py-4 rounded-xl font-bold text-lg shadow-lg shadow-primary/30 active:scale-[0.98] transition-all"
               >
-                Confirm &amp; Pay ₵{(order?.price / 100).toFixed(2)}
+                {redirecting
+                  ? "Redirecting..."
+                  : `Confirm & Pay ₵${(order?.price / 100).toFixed(2)}`}
               </button>
             </div>
           </div>

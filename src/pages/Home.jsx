@@ -32,7 +32,7 @@ export default function Home() {
 
   return (
     <>
-      <Trending plans={plans} active={active} />
+      {/* <Trending plans={plans} active={active} /> */}
       <PlanSection
         plans={plans}
         loading={loading}
