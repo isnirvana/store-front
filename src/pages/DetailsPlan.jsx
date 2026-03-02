@@ -1,69 +1,46 @@
 import { ChevronLeft, Radio, LockKeyhole } from "lucide-react";
 import { Link, Navigate } from "react-router-dom";
-import { useContext, useState, useEffect } from "react";
+import { useContext, useState } from "react";
 import OrderContext from "../context/OrderContext";
 import Input from "../components/ui/input";
+import SlideNotification from "../components/SlideNotification";
+import { AlertMessage } from "../components/AlertMessage";
+import { AlertCircleIcon } from "lucide-react";
 
 function DetailsPlan() {
   const { order } = useContext(OrderContext);
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
-  const [orderDetails, setOrderDetails] = useState({});
   const [redirecting, setRedirecting] = useState(false);
-  const [paymentUrl, setPaymentUrl] = useState("");
-  const [paymentStatus, setPaymentStatus] = useState(null);
+  const [error, setError] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setRedirecting(true);
-    setOrderDetails({
-      order,
-      phone,
-      email,
-      // id: crypto.randomUUID(),
-    });
-  };
+    setError(false);
 
-  useEffect(() => {
-    console.log(orderDetails);
-    async function makePayment() {
-      try {
-        const response = await fetch(
-          "https://nonuniform-salley-postosseous.ngrok-free.dev/api/payment/initialize",
-          {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify(orderDetails),
+    try {
+      const response = await fetch(
+        "https://nonuniform-salley-postosseous.ngrok-free.dev/api/payment/initialize",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
           },
-        );
+          body: JSON.stringify({ order, phone, email }),
+        },
+      );
 
-        if (!response.ok) {
-          console.error("Payment failed");
-          return;
-        }
+      if (!response.ok) throw new Error("Payment failed");
 
-        const result = await response.json();
-        setPaymentStatus(result.status);
-        setPaymentUrl(result.data.authorization_url);
-        console.log("Payment successful:", result);
-      } catch (error) {
-        setRedirecting(false);
-        console.error("Error with post request: ", error);
-      }
+      const result = await response.json();
+      window.location.href = result.data.authorization_url;
+    } catch (err) {
+      setRedirecting(false);
+      setError(true);
+      console.log(err);
     }
-
-    if (redirecting) {
-      makePayment();
-    }
-  }, [orderDetails]);
-
-  useEffect(() => {
-    if (paymentStatus && paymentUrl) {
-      window.location.href = paymentUrl;
-    }
-  }, [paymentStatus, paymentUrl]);
+  };
 
   if (!order?.price) {
     return <Navigate to="/" replace />;
@@ -71,6 +48,18 @@ function DetailsPlan() {
 
   return (
     <>
+      {error && (
+        <SlideNotification
+          message={
+            <AlertMessage
+              icon={<AlertCircleIcon />}
+              title="Payment failed"
+              description="Your payment could not be processed. Please try again."
+              variant="destructive"
+            />
+          }
+        />
+      )}
       <header className="flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between sticky top-0 z-10">
         <Link to="/">
           <div className="text-primary dark:text-white flex shrink-0 items-center justify-center cursor-pointer">

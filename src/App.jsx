@@ -4,6 +4,7 @@ import OrderProvider from "./context/OrderProvider";
 import DetailsPlan from "./pages/DetailsPlan";
 import Home from "./pages/Home";
 import { Routes, Route, useLocation } from "react-router-dom";
+import OrderStatus from "./pages/OrderStatus";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function AnimatedRoutes() {
               </PageTransition>
             }
           />
+          <Route path="order-status" element={<OrderStatus />} />
         </Routes>
       </LayoutGroup>
     </AnimatePresence>
