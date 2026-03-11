@@ -1,4 +1,4 @@
-import { Signal, Bell, CircleUser } from "lucide-react";
+import { Signal, Bell, Menu } from "lucide-react";
 import SearchInput from "./SearchInput";
 
 const Navbar = () => {
@@ -19,13 +19,11 @@ const Navbar = () => {
             <Bell className="material-symbols-outlined text-[#4c669a]" />
           </button>
           <button className="p-2 rounded-full bg-white dark:bg-gray-800 shadow-sm">
-            <CircleUser className="material-symbols-outlined text-[#4c669a]" />
+            <Menu className="text-[#4c669a]" />
           </button>
         </div>
       </div>
-      <div className="px-4 py-3 md:hidden">
-        <SearchInput />
-      </div>
+      {/* <div className="px-4 py-3 md:hidden"><SearchInput /></div> */}
     </header>
   );
 };

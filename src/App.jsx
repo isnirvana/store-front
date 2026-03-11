@@ -39,7 +39,7 @@ function AnimatedRoutes() {
               </PageTransition>
             }
           />
-          <Route path="order-status" element={<OrderStatus />} />
+          <Route path="order-status/:id" element={<OrderStatus />} />
         </Routes>
       </LayoutGroup>
     </AnimatePresence>
