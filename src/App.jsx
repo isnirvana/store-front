@@ -5,6 +5,7 @@ import DetailsPlan from "./pages/DetailsPlan";
 import Home from "./pages/Home";
 import { Routes, Route, useLocation } from "react-router-dom";
 import OrderStatus from "./pages/OrderStatus";
+import OrderHistory from "./pages/OrderHistory";
 
 function App() {
   return (
@@ -40,6 +41,15 @@ function AnimatedRoutes() {
             }
           />
           <Route path="order-status/:id" element={<OrderStatus />} />
+          <Route
+            path="/history"
+            element={
+              <>
+                <Navbar />
+                <OrderHistory />
+              </>
+            }
+          />
         </Routes>
       </LayoutGroup>
     </AnimatePresence>

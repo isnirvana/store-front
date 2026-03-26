@@ -2,7 +2,7 @@ import { ChevronLeft, Radio, LockKeyhole } from "lucide-react";
 import { Link, Navigate } from "react-router-dom";
 import { useContext, useState } from "react";
 import OrderContext from "../context/OrderContext";
-import Input from "../components/ui/input";
+import Input from "../components/ui/InputField";
 import SlideNotification from "../components/SlideNotification";
 import { AlertMessage } from "../components/AlertMessage";
 import { AlertCircleIcon } from "lucide-react";

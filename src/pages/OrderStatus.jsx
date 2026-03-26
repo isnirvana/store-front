@@ -62,7 +62,7 @@ export default function OrderStatus() {
   if (loading) {
     return (
       <div className="min-h-screen flex flex-col items-center justify-center bg-gray-50 dark:bg-slate-900 py-8 px-4">
-        <Loader className="h-10 w-10 text-slate-900 animate-spin" />
+        <Loader className="h-10 w-10 text-slate-900 dark:text-slate-300 animate-spin" />
         <h2 className="font-bold text-2xl text-slate-900 dark:text-white mt-4 mb-1">
           Checking Order Status
         </h2>
@@ -195,7 +195,7 @@ export default function OrderStatus() {
                         : status === "PROCESSING"
                           ? "bg-blue-600/10 text-blue-600"
                           : "bg-green-600/10 text-green-600"
-                      : "text-slate-800"
+                      : "text-slate-800 dark:text-slate-300"
                   }`}
                 >
                   {value}

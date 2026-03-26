@@ -23,7 +23,9 @@ const Navbar = () => {
           </button>
         </div>
       </div>
-      {/* <div className="px-4 py-3 md:hidden"><SearchInput /></div> */}
+      {/* <div className="px-4 py-3 md:hidden">
+        <SearchInput />
+      </div> */}
     </header>
   );
 };
