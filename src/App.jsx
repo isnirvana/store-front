@@ -6,6 +6,8 @@ import Home from "./pages/Home";
 import { Routes, Route, useLocation } from "react-router-dom";
 import OrderStatus from "./pages/OrderStatus";
 import OrderHistory from "./pages/OrderHistory";
+import Register from "./pages/Register";
+import Login from "./pages/Login";
 
 function App() {
   return (
@@ -50,6 +52,8 @@ function AnimatedRoutes() {
               </>
             }
           />
+          <Route path="/register" element={<Register />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
       </LayoutGroup>
     </AnimatePresence>

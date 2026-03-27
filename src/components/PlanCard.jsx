@@ -37,7 +37,7 @@ function PlanCard({ item, active }) {
               onClick={() => {
                 handleOrder(item, active);
               }}
-              className="bg-primary/10 text-primary px-4 py-1.5 rounded-lg text-sm font-bold active:bg-primary active:text-white transition-colors"
+              className="bg-primary/10 text-primary px-4 py-1.5 rounded-lg text-sm font-bold active:bg-primary active:text-white transition-colors cursor-pointer"
             >
               Buy Now
             </button>

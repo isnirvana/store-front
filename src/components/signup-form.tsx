@@ -1,108 +1,131 @@
-// import { Button } from "@/components/ui/button"
-// import {
-//   Card,
-//   CardContent,
-//   CardDescription,
-//   CardHeader,
-//   CardTitle,
-// } from "@/components/ui/card"
-// import { Label } from "@/components/ui/label"
-// import { Input } from "@/components/ui/input"
+import { Link } from "react-router-dom";
 
-// export function SignupForm({ ...props }: React.ComponentProps<typeof Card>) {
-//   return (
-//     <Card {...props}>
-//       <CardHeader>
-//         <CardTitle>Create an account</CardTitle>
-//         <CardDescription>
-//           Enter your information below to create your account
-//         </CardDescription>
-//       </CardHeader>
-
-//       <CardContent>
-//         <form className="space-y-6">
-//           <div className="space-y-2">
-//             <Label htmlFor="name">Full Name</Label>
-//             <Input id="name" type="text" placeholder="John Doe" required />
-//           </div>
-
-//           <div className="space-y-2">
-//             <Label htmlFor="email">Email</Label>
-//             <Input
-//               id="email"
-//               type="email"
-//               placeholder="m@example.com"
-//               required
-//             />
-//             {/* <p className="text-sm text-muted-foreground">
-//               We&apos;ll use this to contact you. We will not share your email
-//               with anyone else.
-//             </p> */}
-//           </div>
-
-//           <div className="space-y-2">
-//             <Label htmlFor="password">Password</Label>
-//             <Input id="password" type="password" required />
-//             <p className="text-sm text-muted-foreground">
-//               Must be at least 8 characters long.
-//             </p>
-//           </div>
-
-//           <div className="space-y-2">
-//             <Label htmlFor="confirm-password">Confirm Password</Label>
-//             <Input id="confirm-password" type="password" required />
-//             <p className="text-sm text-muted-foreground">
-//               Please confirm your password.
-//             </p>
-//           </div>
-
-//           <div className="flex flex-col gap-3">
-//             <Button type="submit" className="w-full p-6">
-//               Create Account
-//             </Button>
-
-//             <Button variant="outline" type="button" className="w-full p-6">
-//               Sign up with Google
-//             </Button>
-//           </div>
-
-//           <p className="text-center text-sm text-muted-foreground">
-//             Already have an account?{" "}
-//             <a href="#" className="underline underline-offset-4">
-//               Sign in
-//             </a>
-//           </p>
-//         </form>
-//       </CardContent>
-//     </Card>
-//   )
-// }
 export function SignupForm() {
-return (
-        <>
-            <style>{`
-                @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-            
-                * {
-                    font-family: 'Poppins', sans-serif;
-                }
-            `}</style>
-            
-            <div className="flex flex-col justify-center w-full max-w-80 rounded-xl px-6 py-8 border border-slate-700 bg-slate-900 text-white text-sm">
-                <h2 className="text-2xl font-semibold">Sign In</h2>
-                <p className="text-slate-300 mt-1">Login to your account</p>
-                <form className="mt-8" onsubmit="return false">
-                    <label htmlFor="email" className="block mb-1 font-medium text-slate-300">Email address</label>
-                    <input type="email" id="email" name="email" placeholder="Email" className="w-full p-2 mb-3 bg-slate-900 border border-slate-700 rounded-md focus:outline-none focus:ring-1 transition focus:ring-indigo-500 focus:border-indigo-500" />
-            
-                    <label htmlFor="password" className="block mb-1 font-medium text-slate-300">Password</label>
-                    <input type="password" id="password" name="password" placeholder="Password" className="w-full p-2 mb-2 bg-slate-900 border border-slate-700 rounded-md focus:outline-none focus:ring-1 transition focus:ring-indigo-500 focus:border-indigo-500" />
-                    <div className="text-right">
-                        <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">Forgot password?</a>
-                    </div>
-                    <button type="submit" className="w-full mt-10 px-4 py-2.5 font-medium text-white bg-indigo-600 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500">Sign in</button>
-                </form>
+  return (
+    <div className="flex min-h-screen flex-col justify-center px-6 py-12 lg:px-8">
+      <div className="sm:mx-auto sm:w-full sm:max-w-sm">
+        <img
+          src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
+          alt="Your Company"
+          className="mx-auto h-10 w-auto dark:hidden"
+        />
+        <img
+          src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
+          alt="Your Company"
+          className="mx-auto h-10 w-auto not-dark:hidden"
+        />
+
+        <h2 className="mt-10 text-center text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+          Create your account
+        </h2>
+        <p className="mt-2 text-center text-sm text-gray-500 dark:text-gray-400">
+          Sign up to get started
+        </p>
+      </div>
+
+      <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+        <form className="space-y-5">
+          <div>
+            <label
+              htmlFor="name"
+              className="block text-sm font-medium text-gray-900 dark:text-gray-100"
+            >
+              Full name
+            </label>
+            <div className="mt-2">
+              <input
+                id="name"
+                name="name"
+                type="text"
+                required
+                autoComplete="name"
+                placeholder="John Doe"
+                className="block w-full rounded-md bg-white px-3 py-2 text-sm text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 dark:bg-white/5 dark:text-white dark:outline-white/10 dark:placeholder:text-gray-500 dark:focus:outline-indigo-500"
+              />
             </div>
-        </>
-    )
+          </div>
+
+          <div>
+            <label
+              htmlFor="email"
+              className="block text-sm font-medium text-gray-900 dark:text-gray-100"
+            >
+              Email address
+            </label>
+            <div className="mt-2">
+              <input
+                id="email"
+                name="email"
+                type="email"
+                required
+                autoComplete="email"
+                placeholder="you@example.com"
+                className="block w-full rounded-md bg-white px-3 py-2 text-sm text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 dark:bg-white/5 dark:text-white dark:outline-white/10 dark:placeholder:text-gray-500 dark:focus:outline-indigo-500"
+              />
+            </div>
+          </div>
+
+          <div>
+            <label
+              htmlFor="password"
+              className="block text-sm font-medium text-gray-900 dark:text-gray-100"
+            >
+              Password
+            </label>
+            <div className="mt-2">
+              <input
+                id="password"
+                name="password"
+                type="password"
+                required
+                autoComplete="new-password"
+                placeholder="Create a password"
+                className="block w-full rounded-md bg-white px-3 py-2 text-sm text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 dark:bg-white/5 dark:text-white dark:outline-white/10 dark:placeholder:text-gray-500 dark:focus:outline-indigo-500"
+              />
+            </div>
+          </div>
+
+          <div>
+            <label
+              htmlFor="confirmPassword"
+              className="block text-sm font-medium text-gray-900 dark:text-gray-100"
+            >
+              Confirm password
+            </label>
+            <div className="mt-2">
+              <input
+                id="confirmPassword"
+                name="confirmPassword"
+                type="password"
+                required
+                autoComplete="new-password"
+                placeholder="Confirm your password"
+                className="block w-full rounded-md bg-white px-3 py-2 text-sm text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 dark:bg-white/5 dark:text-white dark:outline-white/10 dark:placeholder:text-gray-500 dark:focus:outline-indigo-500"
+              />
+            </div>
+          </div>
+
+          <div>
+            <button
+              type="submit"
+              className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 dark:bg-indigo-500 dark:hover:bg-indigo-400 dark:focus-visible:outline-indigo-500"
+            >
+              Create account
+            </button>
+          </div>
+        </form>
+
+        <p className="mt-8 text-center text-sm text-gray-500 dark:text-gray-400">
+          Already have an account?{" "}
+          <Link to="/login">
+          <span
+            className="font-semibold text-indigo-600 hover:text-indigo-500 dark:text-indigo-400 dark:hover:text-indigo-300"
+            >
+            Sign in
+          </span>
+            </Link>
+        </p>
+      </div>
+    </div>
+  );
 }
