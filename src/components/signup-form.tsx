@@ -1,19 +1,12 @@
+import { Signal } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export function SignupForm() {
   return (
     <div className="flex min-h-screen flex-col justify-center px-6 py-12 lg:px-8">
       <div className="sm:mx-auto sm:w-full sm:max-w-sm">
-        <img
-          src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
-          alt="Your Company"
-          className="mx-auto h-10 w-auto dark:hidden"
-        />
-        <img
-          src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
-          alt="Your Company"
-          className="mx-auto h-10 w-auto not-dark:hidden"
-        />
+        <Signal className="mx-auto h-10 w-auto not-dark:hidden text-indigo-500" />
+        <Signal className="mx-auto h-10 w-auto dark:hidden text-indigo-600" />
 
         <h2 className="mt-10 text-center text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
           Create your account
@@ -129,3 +122,4 @@ export function SignupForm() {
     </div>
   );
 }
+
